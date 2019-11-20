@@ -1,7 +1,14 @@
 <?php
-/**
- * Adds Foo_Widget widget.
+/*
+ * Plugin Name: To The Top
+ * Plugin URI: https://github.com/TigranVardanyan/To-the-top
+ * Description: Scroll to the top button
+ * Version: 0.0.1
+ * Author: Tigran Vardanyan
+ * Author URI: https://www.mydailycode.ru/
+ * License: GPLv2 or later
  */
+
 class Foo_Widget extends WP_Widget {
 
   /**
