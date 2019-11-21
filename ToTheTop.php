@@ -18,7 +18,7 @@ class Foo_Widget extends WP_Widget {
     parent::__construct(
       'foo_widget', // Base ID
       esc_html__( 'Widget Title', 'text_domain' ), // Name
-      array( 'description' => esc_html__( 'A Foo Widget', 'text_domain' ), ) // Args
+      array( 'description' => esc_html__( 'To the top', 'text_domain' ), ) // Args
     );
   }
 
