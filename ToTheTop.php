@@ -9,15 +9,15 @@
  * License: GPLv2 or later
  */
 
-class Foo_Widget extends WP_Widget {
+class to_the_top extends WP_Widget {
 
   /**
    * Register widget with WordPress.
    */
   function __construct() {
     parent::__construct(
-      'foo_widget', // Base ID
-      esc_html__( 'Widget Title', 'text_domain' ), // Name
+      'to_the_top', // Base ID
+      esc_html__( 'To the top button', 'text_domain' ), // Name
       array( 'description' => esc_html__( 'To the top', 'text_domain' ), ) // Args
     );
   }
@@ -158,10 +158,10 @@ class Foo_Widget extends WP_Widget {
     return $instance;
   }
 
-} // class Foo_Widget
+} // class to_the_top
 
-// register Foo_Widget widget
-function register_foo_widget() {
-  register_widget( 'Foo_Widget' );
+// register to_the_top widget
+function register_to_the_top() {
+  register_widget( 'to_the_top' );
 }
-add_action( 'widgets_init', 'register_foo_widget' );
+add_action( 'widgets_init', 'register_to_the_top' );
